@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resoluções - Governança de TI</title>
-    <style>
+       <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: #333;
             margin: 0;
-            padding-top: 70px;
+            padding-top: 50px; /* Espaçamento para a navbar no desktop */
         }
         .navbar {
             background-color: #333;
@@ -98,8 +98,20 @@
         }
         .nav-button.next { background: #2c3e50; }
         .nav-button.next:hover { background: #34495e; }
-        @media screen and (max-width: 600px) {
-            .navbar a { float: none; width: 100%; }
+
+        /* --- CORREÇÃO DA RESPONSIVIDADE --- */
+        @media screen and (max-width: 650px) {
+            body {
+                padding-top: 0; /* Remove o espaçamento do topo no mobile */
+            }
+            .navbar {
+                position: static; /* Faz o menu rolar com a página */
+            }
+            .navbar a {
+                float: none;
+                width: 100%;
+                text-align: left;
+            }
         }
     </style>
 </head>
