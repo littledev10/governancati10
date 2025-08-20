@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resoluções - Governança de TI</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            margin: 0;
+            padding-top: 70px;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar a.active {
+            background-color: #00b894;
+            color: white;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 { margin: 0; font-size: 2.2em; margin-bottom: 10px; }
+        .header p { margin: 0; opacity: 0.9; font-size: 1.1em; }
+        .content { padding: 30px; }
+        .solutions {
+            background: linear-gradient(135deg, #00b894, #00a085);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        .solutions h2 { margin-top: 0; text-align: center; font-size: 1.6em; margin-bottom: 5px; }
+        .solutions .subtitle { text-align: center; margin-top: 0; margin-bottom: 20px; opacity: 0.9; font-size: 1em; }
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        .solution-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #fdcb6e;
+        }
+        .solution-item em {
+            color: #fdcb6e;
+            font-weight: bold;
+            display: block;
+            margin-top: 5px;
+        }
+        .navigation-wrapper {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .nav-button {
+            display: inline-block;
+            padding: 12px 25px;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .nav-button.next { background: #2c3e50; }
+        .nav-button.next:hover { background: #34495e; }
+        @media screen and (max-width: 600px) {
+            .navbar a { float: none; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html" class="active">Início (Pág 1)</a>
+        <a href="governancaTI02.html">Pág 2</a>
+        <a href="governancaTI03.html">Pág 3</a>
+        <a href="governancaTI04.html">Pág 4</a>
+        <a href="governancaTI05.html">Pág 5</a>
+        <a href="governancaTI06.html">Quadros</a>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>🎯 RESOLUÇÃO DAS QUESTÕES</h1>
+            <p>Governança de TI - Peter Weill & Jeanne W. Ross</p>
+        </div>
+        <div class="content">
+            <div class="solutions">
+                <h2>✅ RESPOSTAS 01</h2>
+                <p class="subtitle">Matriz de Arranjo de Governança de TI</p>
+                <div class="solution-grid">
+                    <div class="solution-item">Declarações de alto nível sobre como a TI é utilizada no negócio<br><em>Princípios de TI</em></div>
+                    <div class="solution-item">Organização lógica de dados, aplicações, infraestrutura<br><em>Arquitetura de TI</em></div>
+                    <div class="solution-item">Identifica na atividade da organização, software próprio e de terceiros<br><em>Necessidades de Aplicação de Negócio</em></div>
+                    <div class="solution-item">Onde dispender e alocar recursos para TI, classificar prioridades estratégicas<br><em>Investimento e Priorização de TI</em></div>
+                    <div class="solution-item">Comitês seniores, CxOs<br><em>Monarquia de Negócio</em></div>
+                    <div class="solution-item">Indivíduos ou grupos de executivos de TI<br><em>Monarquia de TI</em></div>
+                    <div class="solution-item">Líderes das unidades de negócios, detentores de processos-chave<br><em>Feudalismo</em></div>
+                    <div class="solution-item">Executivos do nível de diretoria + grupos de negócios + executivos de TI<br><em>Federalismo</em></div>
+                    <div class="solution-item">Executivos de TI e outro grupo (CxOs ou líderes das unidades)<br><em>Duopólio de TI</em></div>
+                    <div class="solution-item">Cada usuário individual<br><em>Anarquia</em></div>
+                    <div class="solution-item">Define quais são as decisões que devem ser tomadas e quem deve tomá-las<br><em>Matriz de Arranjo</em></div>
+                    <div class="solution-item">Serviços de TI coordenados de maneira centralizada e compartilhada<br><em>Infraestrutura de TI</em></div>
+                </div>
+            </div>
+            <div class="solutions">
+                <h2>✅ RESPOSTAS 02</h2>
+                <p class="subtitle">Estrutura de Tomada de Decisão em Governança de TI</p>
+                <div class="solution-grid">
+                    <div class="solution-item">Podem incluir comando das funções de operações, arquitetura, aplicações, etc, podem ser os CIOs das unidades de Negócio.<br><em>Equipes de liderança de TI</em></div>
+                    <div class="solution-item">Enumeram os serviços disponíveis, os níveis alternativos de qualidade e os respectivos custos.<br><em>Acordo de nível de serviço</em></div>
+                    <div class="solution-item">Composto por especialistas técnicos que definem normas, padrões tecnológicos, e em alguns caso, conceder exceções.<br><em>Comitê de arquitetura</em></div>
+                    <div class="solution-item">Mecanismo contábil para alocar os custos centrais da TI nas unidades de negócio.<br><em>Cobrança reversa</em></div>
+                    <div class="solution-item">Canal central de comunicação, para aumentar transparência da governança ao disponibilizar as políticas, os padrões, o desempenhoe e o debate.<br><em>Portais baseados na Web</em></div>
+                    <div class="solution-item">Devem ser híbridos, conhecem questões de negócio, assim como questões técnicas como melhor modelo para um banco de dados distribuidos.<br><em>Gerentes de relacionamento entre negócios e TI</em></div>
+                    <div class="solution-item">Desenvolve a disciplina para rastrear o progresso dos projetos de TI.<br><em>Acompanhamento de projetos de TI</em></div>
+                    <div class="solution-item">Estrutura de tomada de decisão composta pela alta gestão ou seniores.<br><em>Comitê administrativo executivo</em></div>
+                    <div class="solution-item">Dissidentes que ignoram os arranjos de governança, por não conhecer ou não concordar com eles.<br><em>Trabalhando com gerentes que não seguem as regras</em></div>
+                    <div class="solution-item">Estratégia para difundir e explicar novos processos de governança para que os modelos de governança sejam atingindos.<br><em>Comunicação da alta gerência</em></div>
+                    <div class="solution-item">Definem os projetos e aprovam destinação dos recursos.<br><em>Comitê de aprovação de capital</em></div>
+                    <div class="solution-item">Determinar se as expectativas de redução de custo de um projeto ou de aumento de receita realmente se materializaram.<br><em>Rastreamento formal do valor do negócio da TI.</em></div>
+                </div>
+            </div>
+            <div class="navigation-wrapper">
+                <a href="governancaTI02.html" class="nav-button next">Próxima Página &rarr;</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
