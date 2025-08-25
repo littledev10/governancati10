@@ -1,33 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resoluções - Quadros Consolidados de Governança</title>
-    <style>
-        body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #333; margin: 0; padding-top: 70px; }
-        .navbar { background-color: #333; overflow: hidden; position: fixed; top: 0; width: 100%; z-index: 1000; }
-        .navbar a { float: left; display: block; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px; }
-        .navbar a:hover { background-color: #ddd; color: black; }
-        .navbar a.active { background-color: #00b894; color: white; }
-        .container { max-width: 1400px; margin: 20px auto; background: white; border-radius: 20px; box-shadow: 0 25px 50px rgba(0,0,0,0.2); overflow: hidden; }
-        .header { background: linear-gradient(135deg, #2c3e50, #34495e); color: white; padding: 30px; text-align: center; }
-        .header h1 { margin: 0; font-size: 2.2em; margin-bottom: 10px; }
-        .content { padding: 30px; }
-        .table-container { background-color: #f8f9fa; padding: 25px; border-radius: 15px; margin-bottom: 40px; overflow-x: auto; }
-        .table-container h2 { text-align: center; color: #2c3e50; margin-top: 0; margin-bottom: 20px; }
-        table { width: 100%; border-collapse: collapse; font-size: 0.95em; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; vertical-align: top; }
-        th { background-color: #e9ecef; color: #495057; font-weight: bold; }
-        td ul { margin: 0; padding-left: 20px; }
-        tr:nth-child(even) { background-color: #fdfdfd; }
-        .navigation-wrapper { text-align: center; display: flex; justify-content: center; gap: 20px; }
-        .nav-button { display: inline-block; padding: 12px 25px; color: white; text-decoration: none; border-radius: 8px; font-size: 1.1em; font-weight: bold; transition: background 0.3s; }
-        .nav-button.prev { background: #6c757d; }
-        .nav-button.prev:hover { background: #5a6268; }
-        @media screen and (max-width: 600px) { .navbar a { float: none; width: 100%; } }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="book-icon.png">
 </head>
+
 <body>
 
     <div class="navbar">
@@ -40,81 +21,243 @@
     </div>
 
     <div class="container">
-        <div class="header"><h1>🎯 Quadros de Referência Consolidados</h1></div>
+        <div class="header">
+            <h1>🎯 Quadros de Referência Consolidados</h1>
+            <p>Governança de TI - Peter Weill & Jeanne W. Ross</p>
+        </div>
         <div class="content">
             <div class="table-container">
                 <h2>Quadro dos Seis Ativos Principais</h2>
                 <table>
-                    <thead><tr><th>Ativo</th><th>Elementos Essenciais e Definição</th></tr></thead>
+                    <thead>
+                        <tr>
+                            <th>Ativo</th>
+                            <th>Elementos Essenciais e Definição</th>
+                        </tr>
+                    </thead>
                     <tbody>
-                        <tr><td><strong>Ativos Humanos</strong></td><td>Pessoas, habilidades, planos de carreira, treinamento, mentoring, competências e assim por diante.</td></tr>
-                        <tr><td><strong>Ativos Financeiros</strong></td><td>Dinheiro, investimentos, passivo, fluxo de caixa, contas a receber e assim por diante.</td></tr>
-                        <tr><td><strong>Ativos Físicos</strong></td><td>Prédios, fábricas, equipamentos, manutenção, segurança, utilização e assim por diante.</td></tr>
-                        <tr><td><strong>Ativos de PI (Propriedade Intelectual)</strong></td><td>Incluindo o know-how de produtos, serviços e processos devidamente patenteado, registrado ou embutido nas pessoas e nos sistemas da empresa.</td></tr>
-                        <tr><td><strong>Ativos de Informação e TI</strong></td><td>Dados digitalizados, informações e conhecimentos sobre clientes, desempenho de processos, finanças, sistemas de informação e assim por diante.</td></tr>
-                        <tr><td><strong>Ativos de Relacionamento</strong></td><td>Relacionamentos dentro da empresa, bem como relacionamentos, marca e reputação junto a clientes, fornecedores, unidades de negócio, órgãos reguladores, concorrentes, revendas autorizadas e assim por diante.</td></tr>
+                        <tr>
+                            <td><strong>Ativos Humanos</strong></td>
+                            <td>Pessoas, habilidades, planos de carreira, treinamento, mentoring, competências e assim por diante.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ativos Financeiros</strong></td>
+                            <td>Dinheiro, investimentos, passivo, fluxo de caixa, contas a receber e assim por diante.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ativos Físicos</strong></td>
+                            <td>Prédios, fábricas, equipamentos, manutenção, segurança, utilização e assim por diante.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ativos de PI (Propriedade Intelectual)</strong></td>
+                            <td>Incluindo o know-how de produtos, serviços e processos devidamente patenteado, registrado ou embutido nas pessoas e nos sistemas da empresa.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ativos de Informação e TI</strong></td>
+                            <td>Dados digitalizados, informações e conhecimentos sobre clientes, desempenho de processos, finanças, sistemas de informação e assim por diante.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ativos de Relacionamento</strong></td>
+                            <td>Relacionamentos dentro da empresa, bem como relacionamentos, marca e reputação junto a clientes, fornecedores, unidades de negócio, órgãos reguladores, concorrentes, revendas autorizadas e assim por diante.</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
             <div class="table-container">
                 <h2>As Cinco Decisões de TI</h2>
                 <table>
-                    <thead><tr><th>Decisão</th><th>Definição</th></tr></thead>
+                    <thead>
+                        <tr>
+                            <th>Decisão</th>
+                            <th>Definição</th>
+                        </tr>
+                    </thead>
                     <tbody>
-                        <tr><td><strong>Princípios de TI</strong></td><td>Esclarecendo o papel de negócio da TI.</td></tr>
-                        <tr><td><strong>Arquitetura de TI</strong></td><td>Definindo os requisitos de integração e padronização.</td></tr>
-                        <tr><td><strong>Infra-estrutura de TI</strong></td><td>Determinando serviços compartilhados e de suporte.</td></tr>
-                        <tr><td><strong>Necessidade de aplicações de negócio</strong></td><td>Especificando a necessidade comercial de aplicações de TI compradas ou desenvolvidas internamente.</td></tr>
-                        <tr><td><strong>Investimentos e priorização de TI</strong></td><td>Escolhendo quais iniciativas financiar e quanto gastar.</td></tr>
+                        <tr>
+                            <td><strong>Princípios de TI</strong></td>
+                            <td>Esclarecendo o papel de negócio da TI.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Arquitetura de TI</strong></td>
+                            <td>Definindo os requisitos de integração e padronização.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Infra-estrutura de TI</strong></td>
+                            <td>Determinando serviços compartilhados e de suporte.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Necessidade de aplicações de negócio</strong></td>
+                            <td>Especificando a necessidade comercial de aplicações de TI compradas ou desenvolvidas internamente.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Investimentos e priorização de TI</strong></td>
+                            <td>Escolhendo quais iniciativas financiar e quanto gastar.</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
             <div class="table-container">
                 <h2>Os Seis Arquétipos de Governança</h2>
                 <table>
-                    <thead><tr><th>Arquétipo</th><th>Quem Decide (Definição)</th></tr></thead>
+                    <thead>
+                        <tr>
+                            <th>Arquétipo</th>
+                            <th>Quem Decide (Definição)</th>
+                        </tr>
+                    </thead>
                     <tbody>
-                        <tr><td><strong>Monarquia de negócio</strong></td><td>Os altos gerentes.</td></tr>
-                        <tr><td><strong>Monarquia de TI</strong></td><td>Os especialistas em TI.</td></tr>
-                        <tr><td><strong>Feudalismo</strong></td><td>Cada unidade de negócio toma decisões independentes.</td></tr>
-                        <tr><td><strong>Federalismo</strong></td><td>Combinação entre o centro corporativo e as unidades de negócio, com ou sem o envolvimento do pessoal de TI.</td></tr>
-                        <tr><td><strong>Duopólio de TI</strong></td><td>O grupo de TI e algum outro grupo (por exemplo, a alta gerência ou líderes das unidades de negócio).</td></tr>
-                        <tr><td><strong>Anarquia</strong></td><td>Tomada de decisões individual ou por pequenos grupos de modo isolado.</td></tr>
+                        <tr>
+                            <td><strong>Monarquia de negócio</strong></td>
+                            <td>Os altos gerentes.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Monarquia de TI</strong></td>
+                            <td>Os especialistas em TI.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Feudalismo</strong></td>
+                            <td>Cada unidade de negócio toma decisões independentes.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Federalismo</strong></td>
+                            <td>Combinação entre o centro corporativo e as unidades de negócio, com ou sem o envolvimento do pessoal de TI.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Duopólio de TI</strong></td>
+                            <td>O grupo de TI e algum outro grupo (por exemplo, a alta gerência ou líderes das unidades de negócio).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Anarquia</strong></td>
+                            <td>Tomada de decisões individual ou por pequenos grupos de modo isolado.</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
             <div class="table-container">
                 <h2>Mecanismos de Grande Impacto, mas Desafiadores</h2>
                 <table>
-                    <thead><tr><th>Mecanismos</th><th>Objetivos</th><th>Comportamentos Desejáveis</th><th>Comportamentos Indesejáveis Observados</th></tr></thead>
+                    <thead>
+                        <tr>
+                            <th>Mecanismos</th>
+                            <th>Objetivos</th>
+                            <th>Comportamentos Desejáveis</th>
+                            <th>Comportamentos Indesejáveis Observados</th>
+                        </tr>
+                    </thead>
                     <tbody>
-                        <tr><td><strong>Comitê executivo e da alta gerência</strong></td><td>Visão holística do negócio, inclusive da TI</td><td>Administração contínua, incorporando a TI</td><td>TI ignorada</td></tr>
-                        <tr><td><strong>Comitê de arquitetura</strong></td><td>Identificar tecnologias e padrões estratégicos -- e impô-los?</td><td>Tomada de decisões de TI orientada ao negócio</td><td>Atrasos e polícia da TI</td></tr>
-                        <tr><td><strong>Equipes de processos com membros de TI</strong></td><td>Ter uma visão dos processos usando a TI com eficácia</td><td>Administração fim-a-fim de processos</td><td>Estagnação de habilidades funcionais e infra-estrutura de TI fragmentada</td></tr>
-                        <tr><td><strong>Orçamentos e aprovação de investimentos de capital</strong></td><td>Considerar a TI como um outro investimento de negócios</td><td>Investimento prudente em TI, abordagens diferentes para diferentes tipos de investimento</td><td>Paralisia pela análise, Projetos pequenos para evitar a aprovação formal</td></tr>
-                        <tr><td><strong>Acordos de nível de serviço</strong></td><td>Especificar e mensurar os serviços de TI</td><td>Oferta e demanda profissionalizadas</td><td>Administração pelo SLA, e não pela necessidade do negócio</td></tr>
-                        <tr><td><strong>Cobrança reversa</strong></td><td>Recuperar os custos de TI do negócio</td><td>Uso responsável da TI</td><td>Argumentos sobre as cobranças e queda na demanda</td></tr>
-                        <tr><td><strong>Rastreamento formal do valor de negócio da TI</strong></td><td>Mensurar investimentos em TI e sua contribuição para o valor de negócio</td><td>Tornar transparentes: metas, benefícios e custos</td><td>Separação entre a TI e os demais ativos, Enfoque no dinheiro, e não no valor</td></tr>
+                        <tr>
+                            <td><strong>Comitê executivo e da alta gerência</strong></td>
+                            <td>Visão holística do negócio, inclusive da TI</td>
+                            <td>Administração contínua, incorporando a TI</td>
+                            <td>TI ignorada</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Comitê de arquitetura</strong></td>
+                            <td>Identificar tecnologias e padrões estratégicos -- e impô-los?</td>
+                            <td>Tomada de decisões de TI orientada ao negócio</td>
+                            <td>Atrasos e polícia da TI</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Equipes de processos com membros de TI</strong></td>
+                            <td>Ter uma visão dos processos usando a TI com eficácia</td>
+                            <td>Administração fim-a-fim de processos</td>
+                            <td>Estagnação de habilidades funcionais e infra-estrutura de TI fragmentada</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Orçamentos e aprovação de investimentos de capital</strong></td>
+                            <td>Considerar a TI como um outro investimento de negócios</td>
+                            <td>Investimento prudente em TI, abordagens diferentes para diferentes tipos de investimento</td>
+                            <td>Paralisia pela análise, Projetos pequenos para evitar a aprovação formal</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Acordos de nível de serviço</strong></td>
+                            <td>Especificar e mensurar os serviços de TI</td>
+                            <td>Oferta e demanda profissionalizadas</td>
+                            <td>Administração pelo SLA, e não pela necessidade do negócio</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cobrança reversa</strong></td>
+                            <td>Recuperar os custos de TI do negócio</td>
+                            <td>Uso responsável da TI</td>
+                            <td>Argumentos sobre as cobranças e queda na demanda</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Rastreamento formal do valor de negócio da TI</strong></td>
+                            <td>Mensurar investimentos em TI e sua contribuição para o valor de negócio</td>
+                            <td>Tornar transparentes: metas, benefícios e custos</td>
+                            <td>Separação entre a TI e os demais ativos, Enfoque no dinheiro, e não no valor</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
             <div class="table-container">
                 <h2>Avaliando o Desempenho da Governança de TI</h2>
                 <table>
-                    <thead><tr><th style="width: 20%;">Categoria</th><th>Detalhes</th></tr></thead>
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">Categoria</th>
+                            <th>Detalhes</th>
+                        </tr>
+                    </thead>
                     <tbody>
-                        <tr><td><strong>Ambiente</strong></td><td><ul><li><strong>Estratégia:</strong> Excelência operacional, Intimidade com o cliente, Liderança de produtos</li><li><strong>Tamanho:</strong> Número de UNs (Unidades de Negócio)</li><li><strong>Sinergia e/ou autonomia das UNs</strong></li><li><strong>Intensidade da TI:</strong> Dinheiro, Pessoas</li></ul></td></tr>
-                        <tr><td><strong>Arranjos de governança</strong></td><td><ul><li>Principais decisões e arquétipos de TI</li><li><strong>Mecanismos:</strong> Conselhos, SLAs, Organização da TI, Cobrança reversa, Comitê de Arquitetura</li></ul></td></tr>
-                        <tr><td><strong>Consciência da governança</strong></td><td><ul><li>Porcentagem de gerentes em posição de liderança que podem descrever a governança</li><li><strong>Abordagens de comunicação:</strong> Reuniões, Documentos, Portal</li><li><strong>Exceções:</strong> Percentual de projetos</li></ul></td></tr>
-                        <tr><td><strong>Desempenho da governança</strong></td><td><ul><li>Média de quatro medidas de desempenho ordenadas pela importância (Pontuação de 0 a 100)</li><li><strong>Uso eficaz da TI para:</strong> Controle de custos, Crescimento, Utilização de ativos, Flexibilidade do negócio</li></ul></td></tr>
-                        <tr><td><strong>Desempenho financeiro</strong></td><td><ul><li><strong>Lucros:</strong> Margem percentual, ROE, ROI</li><li><strong>Utilização de ativos:</strong> ROA</li><li><strong>Crescimento:</strong> Mudança percentual na receita</li><li><strong>Dados mensurados utilizando-se:</strong> Mudança percentual média em três anos ajustada à indústria</li></ul></td></tr>
+                        <tr>
+                            <td><strong>Ambiente</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Estratégia:</strong> Excelência operacional, Intimidade com o cliente, Liderança de produtos</li>
+                                    <li><strong>Tamanho:</strong> Número de UNs (Unidades de Negócio)</li>
+                                    <li><strong>Sinergia e/ou autonomia das UNs</strong></li>
+                                    <li><strong>Intensidade da TI:</strong> Dinheiro, Pessoas</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Arranjos de governança</strong></td>
+                            <td>
+                                <ul>
+                                    <li>Principais decisões e arquétipos de TI</li>
+                                    <li><strong>Mecanismos:</strong> Conselhos, SLAs, Organização da TI, Cobrança reversa, Comitê de Arquitetura</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Consciência da governança</strong></td>
+                            <td>
+                                <ul>
+                                    <li>Porcentagem de gerentes em posição de liderança que podem descrever a governança</li>
+                                    <li><strong>Abordagens de comunicação:</strong> Reuniões, Documentos, Portal</li>
+                                    <li><strong>Exceções:</strong> Percentual de projetos</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Desempenho da governança</strong></td>
+                            <td>
+                                <ul>
+                                    <li>Média de quatro medidas de desempenho ordenadas pela importância (Pontuação de 0 a 100)</li>
+                                    <li><strong>Uso eficaz da TI para:</strong> Controle de custos, Crescimento, Utilização de ativos, Flexibilidade do negócio</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Desempenho financeiro</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Lucros:</strong> Margem percentual, ROE, ROI</li>
+                                    <li><strong>Utilização de ativos:</strong> ROA</li>
+                                    <li><strong>Crescimento:</strong> Mudança percentual na receita</li>
+                                    <li><strong>Dados mensurados utilizando-se:</strong> Mudança percentual média em três anos ajustada à indústria</li>
+                                </ul>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
-             <div class="navigation-wrapper">
+            <div class="navigation-wrapper">
                 <a href="governancaTI05.html" class="nav-button prev">&larr; Página Anterior</a>
             </div>
         </div>
     </div>
 </body>
+
 </html>
